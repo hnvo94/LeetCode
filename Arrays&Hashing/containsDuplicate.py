@@ -12,6 +12,7 @@ class Solution:
     print(containsDuplicate(nums))
 
 '''
+Problem: leetcode 217 Contains Duplicate - Easy
 Time complexity: O(n) - Because the worst case is we have to loop thourgh very end of the list to find that duplicate number. And the list has n elements, so that it has O(n) runtime
 Space complexity: O(n) - Same as time complexity, because we have to add n elements into the hashset. 
 
