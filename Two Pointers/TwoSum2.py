@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+    def twoSum(numbers, target):
         low, high = 0, len(numbers) - 1
         # calculate the sum of numbers[low] and numbers[high]
         while low < high:
@@ -13,6 +13,11 @@ class Solution:
                 return [low + 1, high + 1] # we want to return as indices 
         return -1
 
+
+    test = [1,2,3,4]
+    target = 3
+
+    print(twoSum(test, target))
 '''
 167. Two Sum II - Input Array Is Sorted - Medium
 Time complexity: O(n) - we need to move each point (low and high) one by one through the list
